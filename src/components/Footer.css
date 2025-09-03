@@ -1,0 +1,23 @@
+/* Footer */
+.footer {
+  background: var(--dark-bg);
+  border-top: 1px solid var(--border-color);
+  padding: 2rem;
+}
+
+.footer-content {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .footer {
+    padding: 1.5rem;
+  }
+}

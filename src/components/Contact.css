@@ -1,0 +1,161 @@
+/* Contact Section */
+.contact {
+  padding: 2.5rem 0;
+  background: var(--bg-primary);
+}
+
+.contact-content {
+  width: 100%;
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 0 4rem;
+}
+
+.contact-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 6rem;
+  align-items: center;
+  min-height: 50vh;
+}
+
+.contact-left {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.contact-title {
+  font-size: clamp(3rem, 6vw, 4.5rem);
+  font-weight: 800;
+  color: var(--text-primary);
+  line-height: 1.1;
+  letter-spacing: -1px;
+  text-align: left;
+}
+
+.contact-right {
+  display: flex;
+  align-items: center;
+}
+
+.contact-methods {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  width: 100%;
+}
+
+.contact-method {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  padding: 0;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  border: none;
+  background: none;
+}
+
+.contact-method:hover {
+  transform: translateX(5px);
+}
+
+.contact-method:hover .method-icon {
+  transform: scale(1.1);
+}
+
+.method-icon {
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  flex-shrink: 0;
+  transition: all 0.3s ease;
+}
+
+/* Different colors for each contact method */
+.contact-method:nth-child(1) .method-icon {
+  background: #4CAF50; /* Green for phone */
+}
+
+.contact-method:nth-child(2) .method-icon {
+  background: #2196F3; /* Blue for email */
+}
+
+.contact-method:nth-child(3) .method-icon {
+  background: #333333; /* Dark gray for GitHub */
+}
+
+.contact-method:nth-child(4) .method-icon {
+  background: #0077B5; /* LinkedIn blue */
+}
+
+.method-label {
+  font-size: 1.1rem;
+  font-weight: 500;
+  color: var(--text-primary);
+}
+
+
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+  .contact-content {
+    padding: 0 3rem;
+  }
+  
+  .contact-grid {
+    gap: 4rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .contact {
+    padding: 4rem 0;
+  }
+  
+  .contact-content {
+    padding: 0 2rem;
+  }
+  
+  .contact-grid {
+    grid-template-columns: 1fr;
+    gap: 3rem;
+    text-align: center;
+  }
+  
+  .contact-title {
+    text-align: center;
+  }
+  
+  .contact-right {
+    justify-content: center;
+  }
+}
+
+@media (max-width: 480px) {
+  .contact {
+    padding: 3rem 0;
+  }
+  
+  .contact-content {
+    padding: 0 1rem;
+  }
+  
+  .contact-methods {
+    gap: 1rem;
+  }
+  
+  .method-icon {
+    width: 40px;
+    height: 40px;
+  }
+  
+  .method-label {
+    font-size: 1rem;
+  }
+}
