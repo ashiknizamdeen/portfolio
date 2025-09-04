@@ -62,7 +62,7 @@ const Hero = () => {
           <motion.div className="hero-image-container" variants={imageVariants}>
             <div className="profile-image-wrapper">
               <img 
-                src="/proPic.jpg"
+                src="/proPic.png"
                 alt="Ashik Nizamdeen"
                 className="profile-image"
               />
