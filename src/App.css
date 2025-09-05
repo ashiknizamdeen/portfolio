@@ -266,12 +266,12 @@ body {
   }
   
   .container {
-    padding: 0 1rem;
+    padding: 0 0.75rem;
   }
   
   .section {
-    padding: 1.5rem 0;
-    scroll-margin-top: 60px;
+    padding: 2rem 0 1.5rem;
+    scroll-margin-top: 55px;
   }
   
   .section-header {
@@ -296,7 +296,7 @@ body {
   }
   
   .card {
-    padding: 1.5rem;
+    padding: 1.25rem;
     border-radius: 0.875rem;
   }
 }
@@ -307,11 +307,12 @@ body {
   }
   
   .container {
-    padding: 0 0.75rem;
+    padding: 0 0.5rem;
   }
   
   .section {
-    padding: 1.25rem 0;
+    padding: 1.75rem 0 1.25rem;
+    scroll-margin-top: 50px;
   }
   
   .section-header {
@@ -326,6 +327,7 @@ body {
   .section-subtitle {
     font-size: 0.9rem;
     line-height: 1.4;
+    padding: 0 0.125rem;
   }
   
   .btn {
@@ -334,7 +336,7 @@ body {
   }
   
   .card {
-    padding: 1.25rem;
+    padding: 1rem;
     border-radius: 0.75rem;
   }
 }

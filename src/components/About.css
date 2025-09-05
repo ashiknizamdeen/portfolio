@@ -198,17 +198,16 @@
 /* Responsive Design */
 @media (max-width: 768px) {
   .about {
-    padding: 4rem 1rem;
+    padding: 2rem 0;
   }
   
   .about-grid {
     grid-template-columns: 1fr;
-    gap: 3rem;
+    gap: 2.5rem;
   }
   
-  .stats-grid {
-    grid-template-columns: repeat(2, 1fr);
-    gap: 1rem;
+  .about-header {
+    margin-bottom: 2.5rem;
   }
   
   .values-grid {
@@ -223,11 +222,11 @@
 
 @media (max-width: 480px) {
   .about {
-    padding: 3rem 0.75rem;
+    padding: 2rem 0;
   }
   
   .about-header {
-    margin-bottom: 3rem;
+    margin-bottom: 2rem;
   }
   
   .section-title {
@@ -242,15 +241,16 @@
   .text-content p {
     font-size: 0.95rem;
     line-height: 1.6;
+    margin-bottom: 1rem;
   }
   
   .about-highlights {
-    padding: 2rem 1.5rem;
-    min-height: 240px;
+    padding: 1.5rem 1.25rem;
+    min-height: 220px;
   }
   
   .highlight-number {
-    font-size: 2rem;
+    font-size: 1.8rem;
   }
   
   .highlight-label {
@@ -259,10 +259,11 @@
   
   .values-title {
     font-size: 1.3rem;
+    margin-bottom: 1.5rem;
   }
   
   .value-card {
-    padding: 1.5rem 1rem;
+    padding: 1.25rem 1rem;
   }
   
   .value-card h4 {
@@ -276,7 +277,11 @@
 
 @media (max-width: 360px) {
   .about {
-    padding: 2.5rem 0.5rem;
+    padding: 1.5rem 0;
+  }
+  
+  .about-header {
+    margin-bottom: 1.5rem;
   }
   
   .section-title {
@@ -285,31 +290,46 @@
   
   .section-subtitle {
     font-size: 0.95rem;
+    padding: 0 0.25rem;
   }
   
   .text-content p {
     font-size: 0.9rem;
+    margin-bottom: 0.875rem;
   }
   
   .about-highlights {
-    padding: 1.5rem 1rem;
-    min-height: 200px;
+    padding: 1.25rem 0.875rem;
+    min-height: 180px;
   }
   
   .highlight-number {
-    font-size: 1.8rem;
+    font-size: 1.6rem;
   }
   
   .highlight-label {
     font-size: 0.85rem;
   }
   
+  .values-title {
+    font-size: 1.2rem;
+    margin-bottom: 1.25rem;
+  }
+  
   .value-card {
-    padding: 1.25rem 0.75rem;
+    padding: 1rem 0.75rem;
   }
   
   .value-icon {
     width: 50px;
     height: 50px;
+  }
+  
+  .value-card h4 {
+    font-size: 0.95rem;
+  }
+  
+  .value-card p {
+    font-size: 0.85rem;
   }
 }

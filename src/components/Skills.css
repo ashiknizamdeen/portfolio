@@ -309,15 +309,15 @@
 
 @media (max-width: 768px) {
   .skills {
-    padding: 4rem 0;
+    padding: 2rem 0;
   }
   
   .skills-content {
-    padding: 0 2rem;
+    padding: 0 1rem;
   }
   
   .skills-header {
-    margin-bottom: 3rem;
+    margin-bottom: 2.5rem;
   }
   
   .categories-grid {
@@ -340,7 +340,7 @@
   }
   
   .modal-content {
-    margin: 1rem;
+    margin: 0.75rem;
     max-height: 90vh;
   }
   
@@ -373,11 +373,15 @@
 
 @media (max-width: 480px) {
   .skills {
-    padding: 3rem 0;
+    padding: 2rem 0;
   }
   
   .skills-content {
     padding: 0 0.75rem;
+  }
+  
+  .skills-header {
+    margin-bottom: 2rem;
   }
   
   .skills-title {
@@ -387,6 +391,11 @@
   .skills-subtitle {
     font-size: 1.1rem;
     padding: 0 0.5rem;
+  }
+  
+  .categories-grid {
+    max-width: 350px;
+    gap: 1.25rem;
   }
   
   .category-card {
@@ -427,11 +436,15 @@
 
 @media (max-width: 360px) {
   .skills {
-    padding: 2.5rem 0;
+    padding: 1.75rem 0;
   }
   
   .skills-content {
     padding: 0 0.5rem;
+  }
+  
+  .skills-header {
+    margin-bottom: 1.5rem;
   }
   
   .skills-title {
@@ -440,6 +453,7 @@
   
   .skills-subtitle {
     font-size: 1rem;
+    padding: 0 0.25rem;
   }
   
   .categories-grid {
