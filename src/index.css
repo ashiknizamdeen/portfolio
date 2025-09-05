@@ -111,3 +111,32 @@ img {
 .container {
   contain: layout style paint;
 }
+
+/* Additional mobile optimizations */
+@media (max-width: 768px) {
+  body {
+    font-size: 16px;
+  }
+  
+  html {
+    -webkit-text-size-adjust: 100%;
+  }
+}
+
+@media (max-width: 480px) {
+  body {
+    font-size: 15px;
+    line-height: 1.5;
+  }
+  
+  * {
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+  }
+}
+
+@media (max-width: 360px) {
+  body {
+    font-size: 14px;
+  }
+}

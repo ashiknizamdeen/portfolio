@@ -223,22 +223,93 @@
 
 @media (max-width: 480px) {
   .about {
-    padding: 3rem 1rem;
+    padding: 3rem 0.75rem;
   }
   
   .about-header {
     margin-bottom: 3rem;
   }
   
+  .section-title {
+    font-size: clamp(2rem, 8vw, 2.8rem);
+  }
+  
+  .section-subtitle {
+    font-size: 1rem;
+    padding: 0 0.5rem;
+  }
+  
   .text-content p {
+    font-size: 0.95rem;
+    line-height: 1.6;
+  }
+  
+  .about-highlights {
+    padding: 2rem 1.5rem;
+    min-height: 240px;
+  }
+  
+  .highlight-number {
+    font-size: 2rem;
+  }
+  
+  .highlight-label {
+    font-size: 0.9rem;
+  }
+  
+  .values-title {
+    font-size: 1.3rem;
+  }
+  
+  .value-card {
+    padding: 1.5rem 1rem;
+  }
+  
+  .value-card h4 {
     font-size: 1rem;
   }
   
-  .stat-item h3 {
-    font-size: 1.5rem;
+  .value-card p {
+    font-size: 0.9rem;
+  }
+}
+
+@media (max-width: 360px) {
+  .about {
+    padding: 2.5rem 0.5rem;
   }
   
-  .stats-grid {
-    gap: 0.75rem;
+  .section-title {
+    font-size: clamp(1.8rem, 8vw, 2.5rem);
+  }
+  
+  .section-subtitle {
+    font-size: 0.95rem;
+  }
+  
+  .text-content p {
+    font-size: 0.9rem;
+  }
+  
+  .about-highlights {
+    padding: 1.5rem 1rem;
+    min-height: 200px;
+  }
+  
+  .highlight-number {
+    font-size: 1.8rem;
+  }
+  
+  .highlight-label {
+    font-size: 0.85rem;
+  }
+  
+  .value-card {
+    padding: 1.25rem 0.75rem;
+  }
+  
+  .value-icon {
+    width: 50px;
+    height: 50px;
   }
 }

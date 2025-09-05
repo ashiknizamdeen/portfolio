@@ -1,6 +1,6 @@
 import React from 'react';
 import { motion } from 'framer-motion';
-import { MapPin, Mail, Phone, Github, Linkedin, Send } from 'lucide-react';
+import { MapPin, Mail, Phone, Github, Linkedin, Send, ExternalLink } from 'lucide-react';
 import './Contact.css';
 
 const Contact = () => {
@@ -31,22 +31,32 @@ const Contact = () => {
     {
       icon: Phone,
       label: '+94 77 558 9559',
-      href: 'tel:+94775589559'
+      href: 'tel:+94775589559',
+      type: 'phone'
     },
     {
       icon: Mail,
       label: 'ashikshaheed4@gmail.com',
-      href: 'mailto:ashikshaheed4@gmail.com'
+      href: 'mailto:ashikshaheed4@gmail.com',
+      type: 'email'
     },
     {
       icon: Github,
       label: 'GitHub',
-      href: 'https://github.com/ashiknizamdeen'
+      href: 'https://github.com/ashiknizamdeen',
+      type: 'social'
     },
     {
       icon: Linkedin,
       label: 'LinkedIn',
-      href: 'https://www.linkedin.com/in/ashik-nizamdeen-339962233/'
+      href: 'https://www.linkedin.com/in/ashik-nizamdeen-339962233/',
+      type: 'social'
+    },
+    {
+      icon: ExternalLink,
+      label: 'Hire Me on Fiverr',
+      href: 'http://www.fiverr.com/s/42BN43l',
+      type: 'fiverr'
     }
   ];
 
@@ -72,6 +82,19 @@ const Contact = () => {
               <div className="contact-intro">
                 <h3>Get In Touch</h3>
                 <p>Ready to start your next project? Let's discuss how we can work together.</p>
+                
+                <motion.div className="hire-me-cta" variants={itemVariants}>
+                  <div className="cta-highlight">
+                    <div className="availability-status">
+                      <div className="status-dot"></div>
+                      <span>Available for Projects</span>
+                    </div>
+                    <p className="cta-text">
+                      Looking for professional web development services? 
+                      Check out my Fiverr gig for custom solutions.
+                    </p>
+                  </div>
+                </motion.div>
               </div>
             </motion.div>
 
@@ -81,7 +104,7 @@ const Contact = () => {
                   <motion.a
                     key={index}
                     href={method.href}
-                    className="contact-method"
+                    className={`contact-method ${method.type === 'fiverr' ? 'fiverr-method' : ''}`}
                     target={method.href.startsWith('http') ? '_blank' : '_self'}
                     rel={method.href.startsWith('http') ? 'noopener noreferrer' : ''}
                     whileHover={{ scale: 1.02, x: 5 }}

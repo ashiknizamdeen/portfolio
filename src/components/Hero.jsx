@@ -1,6 +1,6 @@
 import React from 'react';
 import { motion } from 'framer-motion';
-import { Download } from 'lucide-react';
+import { Download, ExternalLink, Briefcase } from 'lucide-react';
 import './Hero.css';
 
 const Hero = () => {
@@ -98,6 +98,30 @@ const Hero = () => {
                 <Download size={20} />
                 Download Resume
               </motion.a>
+              
+              <motion.a
+                href="http://www.fiverr.com/s/42BN43l"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="btn btn-fiverr"
+                whileHover={{ scale: 1.05, y: -2 }}
+                whileTap={{ scale: 0.95 }}
+              >
+                <ExternalLink size={20} />
+                Hire Me on Fiverr
+              </motion.a>
+            </motion.div>
+            
+            <motion.div className="availability-badge" variants={itemVariants}>
+              <div className="badge-content">
+                <div className="status-indicator">
+                  <div className="pulse-dot"></div>
+                </div>
+                <div className="badge-text">
+                  <Briefcase size={16} />
+                  <span>Available for Freelance Projects</span>
+                </div>
+              </div>
             </motion.div>
           </div>
         </div>
