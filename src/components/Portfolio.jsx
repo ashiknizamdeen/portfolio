@@ -11,8 +11,8 @@ const Portfolio = ({ projects }) => {
     visible: {
       opacity: 1,
       transition: {
-        staggerChildren: 0.1,
-        delayChildren: 0.1
+        staggerChildren: 0.05,
+        delayChildren: 0.05
       }
     }
   };
@@ -72,9 +72,14 @@ const Portfolio = ({ projects }) => {
                         alt={`${project.name} project preview`}
                         className="project-image"
                         loading="lazy"
+                        decoding="async"
                         onError={(e) => {
                           e.target.style.display = 'none';
                         }}
+                        onLoad={(e) => {
+                          e.target.style.opacity = '1';
+                        }}
+                        style={{ opacity: 0, transition: 'opacity 0.3s ease' }}
                       />
                     ) : null}
                     <div className="project-category-badge">

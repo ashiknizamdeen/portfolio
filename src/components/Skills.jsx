@@ -184,9 +184,18 @@ const Skills = () => {
                       className="tech-item"
                       initial={{ opacity: 0, y: 20 }}
                       animate={{ opacity: 1, y: 0 }}
-                      transition={{ delay: index * 0.02 }}
+                      transition={{ delay: index * 0.01 }}
                     >
-                      <img src={tech.logo} alt={tech.name} className="tech-logo" />
+                      <img 
+                        src={tech.logo} 
+                        alt={tech.name} 
+                        className="tech-logo"
+                        loading="lazy"
+                        decoding="async"
+                        onError={(e) => {
+                          e.target.style.display = 'none';
+                        }}
+                      />
                       <span className="tech-name">{tech.name}</span>
                     </motion.div>
                   ))}

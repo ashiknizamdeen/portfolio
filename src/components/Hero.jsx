@@ -65,6 +65,9 @@ const Hero = () => {
                 src="/proPic.jpg"
                 alt="Ashik Nizamdeen"
                 className="profile-image"
+                loading="eager"
+                decoding="async"
+                fetchpriority="high"
               />
             </div>
           </motion.div>
